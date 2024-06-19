@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Netflix</title>
+<link rel="icon" href="images/Netflix_icon.svg.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>My Achievement</b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">Dennis</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="images/shutterstock_200289062-1.webp" alt="Turntables overhead" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Becoming a DJ in Berlin</b></h3>
+      <h5>A weird journey, <span class="w3-opacity">April 1, 2024</span></h5>
+    </div>
+    <div class="w3-container">
+      <p>When I first came to this city almost 9 years ago, I didn't play any instrument or care too much about making music or becoming a DJ.
+         Through a good friend of mine who produces music for Hollywood/Netflix movies, games and hiphop artists I got in touch with many other creatives and inspired to pick up an instrument. 
+        I stayed with the guitar for the first 5 years of my life in Berlin, and at some point I really got sick and tired of the party/club life. That all changed when <del> the fire nation attacked</del> COVID-19 hit.
+     </p><p>For a while I was fine, but then I started to feel like I was missing out on something. During that time I also started gaining an interest in vintage audio equipment that people had forgotten about, mostly tape machines and reel-to-reel recorders.
+     I would find out how to repair them, since most of them didn't have any manuals online, and there was hardly anyone still alive with knowledge on how to fix them (at least on the web). 
+    One day, an ex-roommate of mine invited me to an underground party in a warehouse. I reluctantly went there and was amazed by the sheer skill of the DJs who were playing on vinyl records. It just seemed like an art form. 
+I started talking to the organizers and at the next party they told me about Coppi, an idea they had for DJ sessions in a chill environment, where DJs can play what they want without feeling pressured to play club music only, a place where DJs, artists and musicians can connect.
+I went to the first sessions they hosted about a year ago, and I instantly saw something there I didn't experience anywhere else in Berlin. Authenticity, motivation and perseverence. I was surrounded by people who inspired me. 
+</p><p>After about half a year of weekly joining the sessions I decided I also wanted to try it. I bought some turntables and set myself the goal to have played a set on vinyl by the end of the year (6 months).
+ Mind you, normally it takes 1+ years to learn DJing on vinyl good enough so you can actually play a set, but I knew I had ADHD on my side to help speed things up.
+I went to the sessions every week, and slowly I was starting to get known around Coppi by everyone. Then it happened, one night I drunkenly played some records at an afterparty and people were so impressed that they invited me to do a session there.
+Before the end of the year I played 2 sets, and I played 3 more at the beginning of the year. I set myself a goal and reached it, and in the process made a lot of great friends. It's something I'm continously proud of no matter what.    </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+            <p><a href="dennis.html" class="w3-button w3-padding-large w3-white w3-border" target="_self"><b>Go Back »</b></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="images/Denniscropped.webp" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Dennis Aslany</b></h4>
+      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of music blog. I want to share my world with you.</p>
+    </div><hr>
+<!-- Posts -->
+<div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+        <h4>Popular Posts</h4>
+    </div>
+    <ul id="post-list" class="w3-ul w3-hoverable w3-white">
+        <li class="w3-padding-16">
+            <img src="images/Imfine.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">How to pretend you're fine to friends and family</span><br>
+            <span>10 Tips to hide your depression</span>
+        </li>
+        <li class="w3-padding-16">
+            <img src="images/harold-book.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Why she's not texting you back</span><br>
+            <span>She probably found someone better</span>
+        </li> 
+        <li class="w3-padding-16">
+            <img src="images/business-harold.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">10 big words to use during meetings</span><br>
+            <span>Confuse your colleagues and yourself whilst coming off as a knowledgeable douchebag</span>
+        </li>   
+        <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+            <img src="images/Meet-Harold - Imgur.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Happy? Don't be!</span><br>
+            <span>20 Reasons to stay sad</span>
+        </li>  
+    </ul>
+</div>
+<hr>
+
+<script>
+    // Get the post list element
+    const postList = document.getElementById('post-list');
+    
+    // Get the list items
+    const listItems = Array.from(postList.getElementsByTagName('li'));
+    
+    // Randomly shuffle the list items
+    listItems.sort(() => Math.random() - 0.5);
+    
+    // Clear the existing list
+    postList.innerHTML = '';
+    
+    // Append the shuffled list items back to the post list
+    listItems.forEach(item => {
+        postList.appendChild(item);
+    });
+</script>
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Markus</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Berlin</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DJ</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hiba</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Pride</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Nonsense</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Music</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Fries</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Coding</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Website</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <a href="dennis.html" class="w3-button w3-black w3-padding-large w3-margin-bottom" target="_self">Previous</a>
+  <a href="dennis3.html" class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>

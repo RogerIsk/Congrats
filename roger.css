@@ -1,0 +1,178 @@
+/* edits the text */
+.container {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+/* adds glow effect */
+.container:hover {
+    text-shadow: 0 0 50px rgb(165, 2, 2);
+}
+h1 {
+    font-size: 48px; /* Set font size to 36 pixels */
+}
+body {
+    background-image: url("../images/divine.jpg"); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keep the background image fixed in place */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+.text1 {
+    text-align: center;
+    padding: 50px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.418); /* Set background color to yellow */
+    padding: 5px; /* Add padding for better appearance */
+    
+}
+/* adds glow effect */
+.text1:hover {
+    text-shadow: 0 0 50px rgb(255, 255, 255);
+}
+.text2 {
+    text-align: center;
+    padding: 50px;
+    color: rgb(251, 255, 0);
+}
+/* adds glow effect */
+.text2:hover {
+    text-shadow: 0 0 5px rgb(255, 136, 0);
+}
+
+.text3 {
+    text-align: center;
+    padding: 50px;
+    color: rgb(145, 0, 0);
+}
+/* adds glow effect */
+.text3:hover {
+    text-shadow: 0 0 5px rgb(253, 98, 93);
+}
+
+.text4 {
+    text-align: center;
+    padding: 50px;
+    color: rgb(255, 255, 255);
+}
+/* adds glow effect */
+.text4:hover {
+    text-shadow: 0 0 10px rgb(13, 146, 255);
+}
+.text5 {
+    text-align: center;
+    padding: 50px;
+    color: rgb(255, 249, 165);
+}
+/* adds glow effect */
+.text5:hover {
+    text-shadow: 0 0 10px rgb(255, 2, 2);
+}
+
+
+/* Define keyframes for the rotation animation */
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg); /* Start rotation from 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* Rotate to 360 degrees */
+    }
+}
+.button-container {
+    position: fixed;
+    top: 50%; /* Initially center vertically */
+    left: 50;
+    transform: translateY(-50%);
+    z-index: 999; /* Ensure the button stays on top */
+}
+
+.sun-button {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 150px;
+}
+
+.rays {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    top: -10px;
+    left: -10px;
+    border-radius: 50%;
+}
+
+.text {
+    position: relative;
+    z-index: 5;
+}
+
+.sun-button:hover .rays {
+    animation: flee 0.5s infinite alternate ease-in-out;
+}
+
+@keyframes flee {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(20px, 20px);
+    }
+}
+
+
+
+.hexagon-container {
+    width: 400px; /* Adjust the width of the hexagon container */
+    height: 460px; /* Adjust the height of the hexagon container */
+    margin: 50px auto; /* Center the hexagon container */
+    position: relative;
+}
+
+.hexagon {
+    width: 100px; /* Adjust the width of each hexagon */
+    height: 115px; /* Adjust the height of each hexagon */
+    background-color: #ffcc00; /* Adjust the background color */
+    position: absolute;
+}
+
+.main-hexagon {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hexagon:nth-child(2) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+}
+
+.hexagon:nth-child(3) {
+    top: 35%;
+    left: 87%;
+    transform: translateX(-50%) rotate(60deg);
+}
+
+.hexagon:nth-child(4) {
+    top: 35%;
+    left: 13%;
+    transform: translateX(-50%) rotate(-60deg);
+}
+
+.hexagon:nth-child(5) {
+    top: 70%;
+    left: 13%;
+    transform: t

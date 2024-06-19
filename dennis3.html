@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Netflix</title>
+<link rel="icon" href="images/Netflix_icon.svg.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>My Achievement</b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">Dennis</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="images/https___hypebeast.com_image_2021_09_rapper-dan-sur-surgically-implanted-chains-into-scalp-info-000.avif" alt="Turntables overhead" style="width:100%">
+    <div class="w3-container">
+        <h3><b>How to Stay humble</b></h3>
+        <h5>Learn from the worst, <span class="w3-opacity">March 22, 2024</span></h5>
+      </div>
+    <div class="w3-container">
+      <p>Honestly, this has been the easiest part. Knowing so many renowned and world class artists/DJs really puts your own ego in check, sometimes a bit too much.
+        I'm always surrounded by people who are famous but humble, and the Coppi DJ sessions every Thursday really help me see this all the time.
+         Never take anything or anyone for granted, show genuine interest and just do what you love, the rest will come to you naturally.</p>
+         <p>However, this is easier said than done. There's a fine line between being proud and being a douche and it's easy to cross.
+             Should you keep your achievements to yourself because you're worried about coming off as a show-off? Or should you share them with the world because you're proud of what you've accomplished? 
+             Honestly, the only person who can answer that is you. We all suffer from imposter syndrome, I'm always the worst at it. I assume everything is common sense and knowledge, until I meet many people and see that it's not.
+             It's hard to break out of that mindset, but it's possible. It's all about finding the right balance between being proud and being humble.
+         </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+            <p><a href="dennis.html" class="w3-button w3-padding-large w3-white w3-border" target="_self"><b>Go Back »</b></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="images/Denniscropped.webp" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Dennis Aslany</b></h4>
+      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of music blog. I want to share my world with you.</p>
+    </div><hr>
+<!-- Posts -->
+<div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+        <h4>Popular Posts</h4>
+    </div>
+    <ul id="post-list" class="w3-ul w3-hoverable w3-white">
+        <li class="w3-padding-16">
+            <img src="images/Imfine.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">How to pretend you're fine to friends and family</span><br>
+            <span>10 Tips to hide your depression</span>
+        </li>
+        <li class="w3-padding-16">
+            <img src="images/harold-book.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Why she's not texting you back</span><br>
+            <span>She probably found someone better</span>
+        </li> 
+        <li class="w3-padding-16">
+            <img src="images/business-harold.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">10 big words to use during meetings</span><br>
+            <span>Confuse your colleagues and yourself whilst coming off as a knowledgeable douchebag</span>
+        </li>   
+        <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+            <img src="images/Meet-Harold - Imgur.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Happy? Don't be!</span><br>
+            <span>20 Reasons to stay sad</span>
+        </li>  
+    </ul>
+</div>
+<hr>
+
+<script>
+    // Get the post list element
+    const postList = document.getElementById('post-list');
+    
+    // Get the list items
+    const listItems = Array.from(postList.getElementsByTagName('li'));
+    
+    // Randomly shuffle the list items
+    listItems.sort(() => Math.random() - 0.5);
+    
+    // Clear the existing list
+    postList.innerHTML = '';
+    
+    // Append the shuffled list items back to the post list
+    listItems.forEach(item => {
+        postList.appendChild(item);
+    });
+</script>
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Markus</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Berlin</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DJ</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hiba</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Pride</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Nonsense</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Music</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Fries</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Coding</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Website</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <a href="dennis.html" class="w3-button w3-black w3-padding-large w3-margin-bottom" target="_self">Previous</a>
+  <a class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Next »</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>

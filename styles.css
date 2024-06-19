@@ -1,0 +1,124 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: aqua;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(
+        90deg,
+        rgb(19, 19, 195) 0%,
+        rgb(103, 103, 226) 20%,
+        rgb(19, 19, 195) 50%,
+        rgb(103, 103, 226) 80%,
+        rgb(19, 19, 195) 100%
+    );
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 13px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 13px 5px 15px 5px rgba(0,0,0,0);
+}
+header h1{
+    color: white;
+    font-family: 'Sans-serif', Courier, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+h1{
+    padding-top: 35px;
+}
+ul{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    position: relative;
+    padding: 0;
+    margin: 50px auto;
+
+}
+li{
+    margin: 0 5px;
+    list-style: none;
+    border: black 1px solid;
+    border-radius: 5%;
+    padding: 30px;
+    width: 16%;
+    min-width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+li:hover{
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 13px 5px 15px 5px rgba(0,0,0,0);
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto 0px;
+}
+#dennis{
+    background-image: url(/images/shutterstock_200289062-1.webp);
+    background-size: cover;
+}
+#dastin{
+    background-image: url(/images/Blackbird_on_the_toilet.jpeg);
+    background-size: cover;
+}
+#roger{
+    background-image: url(/images/divine.jpg);
+    background-size: cover;
+}
+#erick{
+    background-image: url(/images/3.jpg);
+    background-size: cover;
+}
+#anton{
+    background-image: url(/1644298123_1-abrakadabra-fun-p-martovskii-zayats-4.jpg);
+    background-size: cover;
+}
+#benjamin{
+    background-color: white;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1200px){
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 90%;
+        position: relative;
+        padding: 0;
+        margin: 50px auto;
+    }
+    li{
+        margin: 10px 5px;
+        list-style: none;
+        border: black 1px solid;
+        border-radius: 5%;
+        padding: 30px;
+        width: 25%;
+        min-width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center center;
+        box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+    }
+}

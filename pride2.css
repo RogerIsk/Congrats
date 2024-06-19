@@ -1,0 +1,91 @@
+body {
+    background-image: url("../images/dark.jpg"); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keep the background image fixed in place */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+.hexagon-container {
+    width: 400px; /* Adjust the width of the hexagon container */
+    height: 460px; /* Adjust the height of the hexagon container */
+    margin: 50px auto; /* Center the hexagon container */
+    position: relative;
+}
+
+.hexagon {
+    width: 100px; /* Adjust the width of each hexagon */
+    height: 115px; /* Adjust the height of each hexagon */
+    background-color: #270000; /* Set hexagon background color to golden */
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Create hexagonal shape */
+}
+
+.main-hexagon {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hexagon:nth-child(2) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+}
+
+.hexagon:nth-child(3) {
+    top: 35%;
+    left: 87%;
+    transform: translateX(-50%) rotate(60deg);
+}
+
+.hexagon:nth-child(4) {
+    top: 35%;
+    left: 13%;
+    transform: translateX(-50%) rotate(-60deg);
+}
+
+.hexagon:nth-child(5) {
+    top: 70%;
+    left: 13%;
+    transform: translateX(-50%) rotate(-60deg);
+}
+
+.hexagon:nth-child(6) {
+    top: 70%;
+    left: 87%;
+    transform: translateX(-50%) rotate(60deg);
+}
+
+.hexagon:nth-child(7) {
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+}
+
+.button {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    color: #fff; /* Set button text color to white */
+    text-decoration: none;
+}
+
+/* Style for the button */
+.glow-button {
+    padding: 15px 25px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: none;
+    background-color: #000000; /* Set background color */
+    color: white; /* Set text color */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer;
+    transition: box-shadow 0.3s, background-color 0.3s; /* Add transition effect */
+}
+
+/* Glow effect on hover */
+.glow-button:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /* Add glow effect */
+    background-color: #ffde70; /* Change background color on hover */
+}

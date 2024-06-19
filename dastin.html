@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dastin Pridetitle></title>
+    <link rel="stylesheet" href="styles/dastin.css">
+</head>
+<body>
+    
+<div class="complet">
+    <div class="overtitel">Dastin</div>
+    <div id="leftelement" class="partfC">
+        <div class="underTitel">Sport</div>
+        <div class="textfUD1">I'm happy that I can take a few punches and kicks, which is why I'm sometimes called a punching bag.
+        </div>
+        <div  class="imgfUD2"><img id="pictureN" src="images/fist.webp"></div>
+    </div>
+
+    <div id="rightelement" class="partfC">
+        <div  class="underTitel">Wildlivephotografie</div>
+        <div id="txt21" class="textfUD">Since I hadn't seen a free-roaming red deer yet, I was happy that I was able to take a photo of a red deer in 2023
+        </div>
+        <div id="txt22" class="textfUD">I was happy to have caught a blackbird shitting.
+        </div>
+        <div id="txt23" class="textfUD">I was glad that it worked, that the blur from the railing looked like a fog.
+        </div>
+        <div id="txt24" class="textfUD">I was happy that I captured the moment of the blackbird holding its caught worm in its beak.
+        </div>
+        <div id="txt25" class="textfUD">I was a little proud that I had caught the raven blind or without looking through the viewfinder or display.
+        </div>
+        <div id="txt26" class="textfUD">I was happy about my first deer encounter
+        </div>
+        <div id="txt27" class="textfUD">No idea. I just found it cute.
+        </div>
+        <div class="imgfUD">
+            <img class="pic2" id="w1" src="images/deer.jpeg">
+            <img class="pic2" id="w2" src="images/Blackbird_on_the_toilet.jpeg">
+            <img class="pic2" id="w3" src="images/swan_in_fake_fog.webp">
+            <img class="pic2" id="w4" src="images/Blackbird_with_worm.jpg">
+            <img class="pic2" id="w5" src="images/crow.webp">>
+            <img class="pic2" id="w6" src="images/roedeer.webp">
+            <img class="pic2" id="w7" src="images/swan.webp">
+        </div>
+        <button id="back2">back</button> 
+        <button id="go2">go</button>
+    </div>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    var images = document.querySelectorAll('.pic2'); 
+    var currentIndex = 0; 
+    document.getElementById('go2').addEventListener('click', function() {       
+        images[currentIndex].style.visibility = 'hidden';
+        currentIndex = (currentIndex + 1) % images.length; 
+        images[currentIndex].style.visibility = 'visible';
+    });
+
+    document.getElementById('back2').addEventListener('click', function() {
+        images[currentIndex].style.visibility = 'hidden';
+        currentIndex = (currentIndex - 1 + images.length) % images.length; 
+        images[currentIndex].style.visibility = 'visible';
+    });
+});
+    </script>
+    <script>
+        const backBtn = document.getElementById('back2');
+        const goBtn = document.getElementById('go2');
+        const divs = document.querySelectorAll('.textfUD');
+        let currentIndex = 0;
+    
+        function showNext() {
+            divs[currentIndex].style.visibility = 'hidden';
+            currentIndex = (currentIndex + 1) % divs.length;
+            divs[currentIndex].style.visibility = 'visible';
+        }
+    
+        function showPrevious() {
+            divs[currentIndex].style.visibility = 'hidden';
+            currentIndex = (currentIndex - 1 + divs.length) % divs.length;
+            divs[currentIndex].style.visibility = 'visible';
+        }
+    
+        goBtn.addEventListener('click', showNext);
+        backBtn.addEventListener('click', showPrevious);
+    </script>
+</div>
+</body>
+</html>
